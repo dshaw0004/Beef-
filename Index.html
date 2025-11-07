@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Site — Items</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Items</h1>
+
+    <form id="item-form">
+      <input id="item-id" type="hidden" />
+      <div class="row">
+        <input id="title" placeholder="Title" required />
+      </div>
+      <div class="row">
+        <textarea id="description" placeholder="Description"></textarea>
+      </div>
+      <div class="row actions">
+        <button type="submit" id="save-btn">Save</button>
+        <button type="button" id="cancel-btn" style="display:none">Cancel</button>
+      </div>
+    </form>
+
+    <section>
+      <ul id="items-list" class="items"></ul>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
